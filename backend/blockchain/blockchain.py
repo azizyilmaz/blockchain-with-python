@@ -1,4 +1,4 @@
-from block import Block
+from backend.blockchain.block import Block
 
 
 class Blockchain:
@@ -19,6 +19,7 @@ def main():
     blockchain.add_block('three')
 
     print(blockchain)
+    print(f'blockchain.py __name__: {__name__}')
 
 
 if __name__ == '__main__':
