@@ -2,6 +2,7 @@ Python==3.8.2
 Flask==1.1.2
 pubnub==4.1.6
 requests==2.22.0
+cryptography==2.9.2
 
 C:\Users\AZIZ\AppData\Local\Programs\Python\Python38\Scripts>python.exe C:\Users\AZIZ\Desktop\get-pip.py
 C:\Users\AZIZ\Documents\programming\python\blockchain>py -3 -m venv blockchain-env
