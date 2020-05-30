@@ -1,31 +1,15 @@
+C:\Users\AZIZ\AppData\Local\Programs\Python\Python38\Scripts>python.exe C:\Users\AZIZ\Desktop\get-pip.py
+C:\Users\AZIZ\Documents\programming\python\blockchain>py -3 -m venv blockchain-env
+C:\Users\AZIZ\Documents\programming\python\blockchain>blockchain-env\Scripts\activate
+(blockchain-env) C:\Users\AZIZ\Documents\programming\python\blockchain>pip install flask
+(blockchain-env) C:\Users\AZIZ\Documents\programming\python\blockchain>pip freeze
 Python==3.8.2
 Flask==1.1.2
 pubnub==4.1.6
 requests==2.22.0
 cryptography==2.9.2
 
-C:\Users\AZIZ\AppData\Local\Programs\Python\Python38\Scripts>python.exe C:\Users\AZIZ\Desktop\get-pip.py
-C:\Users\AZIZ\Documents\programming\python\blockchain>py -3 -m venv blockchain-env
-C:\Users\AZIZ\Documents\programming\python\blockchain>blockchain-env\Scripts\activate
-(blockchain-env) C:\Users\AZIZ\Documents\programming\python\blockchain>pip install flask
-(blockchain-env) C:\Users\AZIZ\Documents\programming\python\blockchain>pip freeze
-astroid==2.4.1
-click==7.1.2
-colorama==0.4.3
-Flask==1.1.2
-isort==4.3.21
-itsdangerous==1.1.0
-Jinja2==2.11.2
-lazy-object-proxy==1.4.3
-MarkupSafe==1.1.1
-mccabe==0.6.1
-pylint==2.5.2
-six==1.14.0
-toml==0.10.1
-Werkzeug==1.0.1
-wrapt==1.12.1
-
-Module çalıştırmak için:
+#Module çalıştırmak için:
 
 C:\Users\AZIZ\Documents\programming\python\blockchain>blockchain-env\Scripts\activate
 
