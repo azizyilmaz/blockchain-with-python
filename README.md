@@ -22,3 +22,11 @@ set PEER=True && py -m backend.app
 ```
 npm run start
 ```
+
+**Seed the backend with data**
+
+Make sure to activate the virtual environment.
+
+```
+set SEED_DATA=True && py -m backend.app
+```
