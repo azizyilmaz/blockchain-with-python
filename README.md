@@ -1,22 +1,28 @@
 # Blockchain application with Python
 
+**Block Chain**
+
 **Blockchain Nedir?**
 
-İnsanların sistemde yaptıkları her bir finansal hareket (transaction) bloklara yazılır. Bu finansal hareketin detayları bloklarda saklanır. Bloklar zincir gibi birbirine bağlı olarak sistemde bulunur. Bu bağlı bloklar listesine blockchain denir. Bir bakıma finansal hareketlerin tutulduğu hesap defterleridir diyebilirim. Zincirdeki her yeni blokta, kendisinden önce gelen son bloğun hash değeri saklanır. Bu şekilde blok zinciri oluşturulur. 
+İnsanların sistemde yaptıkları her bir finansal hareket (transaction) bloklara yazılır. Bu finansal hareketin detayları bloklarda saklanır. Bloklar zincir gibi birbirine bağlı olarak sistemde bulunur. Bu bağlı bloklar listesine blockchain denir. Bir bakıma finansal hareketlerin tutulduğu hesap defterleridir diyebilirim.  
 
-Her bloğun tekil bir değeri (unique id) vardır. Bu tekil değer, kriptolama fonksiyonları tarafından rastgele (random) oluşturulan imzalama (hash) değeri ile sağlanır.  
+**Blok Nedir?**
 
-Oluşturulan blokların kopyaları ağdaki tüm bilgisayarlara açık bir şekilde dağıtılır ve bloklarda değişiklik olduğunda bilgi tüm bilgisayarlarda güncellenir. Böylece bilgisayar finansal hareketlerin geçmişine (history) erişebilir ve hareketi doğrulayabilir. Bu yüzden blockchain, merkezi olmayan dağıtık bir ağ yapısında çalışır. Sistemdeki tüm bilgiler güvenli garanti altına alınmış ve aynı zamanda şeffaf bir şekilde herkesle paylaşıldığı için tercih edilir. Herhangi bir merkez yoktur. Hackerların merkezi sistemlerde veriye ulaşması için tek bir merkeze erişim sağlamaları yeterlidir. Hackerların blockchain sisteminde veriye ulaşmaları için ağdaki milyonlarca bilgisayara erişmesi gerekir.  
+Her bloğun tekil bir değeri (unique id) vardır. Bu tekil değer, kriptolama fonksiyonları tarafından rastgele (random) oluşturulan imzalama (hash) değeri ile sağlanır. Zincirdeki her yeni blokta, kendisinden önce gelen son bloğun hash değeri saklanır. Bu şekilde blok zinciri oluşturulur.
+
+**Bloklara Erişim ve Güvenlik**
+
+Oluşturulan blokların kopyaları ağdaki tüm bilgisayarlara açık bir şekilde dağıtılır ve bloklarda değişiklik olduğunda bilgi tüm bilgisayarlarda güncellenir. Böylece bilgisayarlar finansal hareketlerin geçmişine (history) erişebilir ve hareketi doğrulayabilir. Bu yüzden blockchain, merkezi olmayan dağıtık bir ağ yapısında çalışır. Sistemdeki tüm bilgiler, güvenliği garanti altına alınmış ve şeffaf bir şekilde herkesle paylaşılır. Herhangi bir merkez yoktur. Hackerların merkezi sistemlerde veriye ulaşması için tek bir merkeze erişim sağlamaları yeterlidir. Hackerların blockchain sisteminde veriye ulaşmaları için ağdaki milyonlarca bilgisayara erişmesi gerekir.
 
 **Kriptopara (Cryptocurrency)**
 
-Dijital değişim aracıdır. Döviz kurlarının dijital vasıtasına kripto para denir. Her kripto paranın kendi blockchain sistemi vardır. Kripto parada 3 kavram bulunur: Güvenli blockchain sistemi, cüzdan (wallet), mining.   
+Dijital değiş tokuş aracıdır. Döviz kurlarının dijital vasıtasına kripto para denir. Her kripto paranın kendi blockchain sistemi vardır. Kripto parada 3 kavram bulunur: Güvenli blockchain sistemi, cüzdan (wallet), mining.   
 
 **Kriptografi (Cryptography)**
 
-Blockchainler herkesin erişebileceği halka açık veritabanlarında tutulur. Kötü niyetli kişiler verileri manipüle edip değiştirmek ve daha fazla kripto paraya sahip olmak isteyebilir. Bu durumu engellemek için şifreleme algoritmaları kullanılır. Bu algoritmalar veriyi güvenle şifreleyerek kötü niyetli davranışları önlemiş olur, blockchain’i korur. Şifrelemenin kripto paradaki ana mantığı kullanıcıya unique dijital imza oluşturmasıdır. Kullanıcılar 0transactionlarını blockchain’e kendi dijital imzası ile kaydeder. İmza, biri public biri private (private kişiye özel ve taklit edilemez) olan şifrelenmiş anahtar çiftlerinden oluşur. Özel anahtar kişiye özel olduğundan gizli kalması önemlidir. Aksi halde başkaları işlem oluşturabilir ve yetkilendirme sağlanmamış olur. Genel anahtar ise başkalarının doğrulayabilmesi için imza ve veri ile birlikte paylaşılır. 
+Blockchainler herkesin erişebileceği halka açık veritabanlarında tutulur. Kötü niyetli kişiler verileri manipüle edip değiştirmek ve daha fazla kripto paraya sahip olmak isteyebilir. Bu durumu engellemek için şifreleme algoritmaları kullanılır. Bu algoritmalar veriyi güvenle şifreleyerek kötü niyetli davranışları önlemiş olur, blockchain’i korur. Şifrelemenin kripto paradaki ana mantığı kullanıcıya unique dijital imza oluşturmasıdır. Kullanıcılar transactionlarını blockchain’e kendi dijital imzası ile kaydeder. İmza, biri public biri private (private kişiye özel ve taklit edilemez) olan şifrelenmiş anahtar çiftlerinden oluşur. Özel anahtar kişiye özel olduğundan gizli kalması önemlidir. Aksi halde başkaları işlem oluşturabilir ve yetkilendirme sağlanmamış olur. Genel anahtar ise başkalarının doğrulayabilmesi için imza ve veri ile birlikte paylaşılır.  
 
-**Kriptografi (Cryptography)**
+**Cüzdan (Wallet)**
 
 İşlem yapabilmek için hesabınızın olması gerekir. Buna dijital cüzdan denir. Bu cüzdanın güvenliği şifreleme ile sağlanır. Her cüzdanın iki anahtarı vardır. Biri özel biri genel anahtar. Bireylerin public ve private keyleri, cüzdanı muhafaza eder. Fiziksel cüzdanda olduğu gibi, ne kadar kripto paranın olduğu takip edilir. Cüzdanların unique adresi vardır. Başka bireylere kripto para göndermek için kullanılır.   
 
